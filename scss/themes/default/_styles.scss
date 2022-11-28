@@ -1,36 +1,36 @@
 // Commons Styles
 :root {
   // Typography
-  --font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
+  --font-family: var(--font-main), system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
     "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
   --line-height: 1.5;
   --font-weight: 400;
-  --font-size: 16px;
+  --font-size: 14px;
 
   // Responsive typography
   @if $enable-responsive-typography {
     @if map-get($breakpoints, "sm") {
       @media (min-width: map-get($breakpoints, "sm")) {
-        --font-size: 17px;
+        --font-size: 15px;
       }
     }
 
     @if map-get($breakpoints, "md") {
       @media (min-width: map-get($breakpoints, "md")) {
-        --font-size: 18px;
+        --font-size: 16px;
       }
     }
 
     @if map-get($breakpoints, "lg") {
       @media (min-width: map-get($breakpoints, "lg")) {
-        --font-size: 19px;
+        --font-size: 17px;
       }
     }
 
     @if map-get($breakpoints, "xl") {
       @media (min-width: map-get($breakpoints, "xl")) {
-        --font-size: 20px;
+        --font-size: 17px;
       }
     }
   }
